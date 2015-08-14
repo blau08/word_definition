@@ -6,6 +6,6 @@ class Definitions
   end
   define_method(:sentence) do
     sentence = ""
-    sentence += @definition
+    sentence = @definition
   end
 end
