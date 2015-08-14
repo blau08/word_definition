@@ -1,0 +1,12 @@
+<h1><%= @word.word() %></h1>
+
+<% @word.display_definitions().each() do |definition| %>
+<li><%= definition.sentence() %></li>
+<% end %>
+
+<form action="/new_definition" method="post">
+  <input id="word_id" type="hidden" name="word_id" value='@word.id() %>'>
+
+  <label for=""></label>
+
+</form>
