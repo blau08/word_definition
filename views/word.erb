@@ -7,6 +7,10 @@
 <form action="/new_definition" method="post">
   <input id="word_id" type="hidden" name="word_id" value='@word.id() %>'>
 
-  <label for=""></label>
+  <label for="definition">Definition</label>
+  <input type="text" name="definition" id="definition"><br>
+
+  <button type="submit" class="btn btn-primary">Add Definition</button>
 
 </form>
+<a href="/">Back to Word List</a>
