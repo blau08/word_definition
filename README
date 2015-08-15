@@ -10,6 +10,7 @@ _This application runs simply on two classes, a word and a definition class. _
 
 ## Setup
 
+* _https://afternoon-bastion-4391.herokuapp.com/_
 * _Git clone https://github.com/blau08/word_definition.git_
 * _Run ruby app.rb
 * _Go to localhost:4567
