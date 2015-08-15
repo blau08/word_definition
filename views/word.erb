@@ -1,7 +1,7 @@
 <h1><%= @word.word() %></h1>
 
 <% @word.display_definitions().each() do |definition| %>
-<li><%= definition.sentence %></li>
+  <li><%= definition.definition() %></li>
 <% end %>
 
 <form action="/new_definition" method="post">
@@ -13,4 +13,5 @@
   <button type="submit" class="btn btn-primary">Add Definition</button>
 
 </form>
+
 <a href="/">Back to Word List</a>

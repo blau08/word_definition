@@ -13,6 +13,7 @@ describe(Words) do
       expect(test_word.word()).to(eq('prodigy'))
     end
   end
+
   describe('#save') do
     it('adds the word to the master list of words') do
       test_word = Words.new({:word => 'prodigy'})
@@ -20,6 +21,7 @@ describe(Words) do
       expect(Words.all()).to(eq([test_word]))
     end
   end
+
   describe('.clear') do
     it('clears the master list of words') do
       test_word = Words.new({:word => 'prodigy'})
@@ -28,6 +30,7 @@ describe(Words) do
       expect(Words.all()).to(eq([]))
     end
   end
+
   describe('#id') do
     it('returns the id number of a word') do
       test_word = Words.new({:word => 'prodigy'})
@@ -35,6 +38,7 @@ describe(Words) do
       expect(test_word.id()).to(eq(1))
     end
   end
+
   describe('.find') do
     it('finds a word based on its id number') do
       test_word = Words.new({:word => 'prodigy'})
@@ -42,6 +46,7 @@ describe(Words) do
       expect(Words.find(1)).to(eq(test_word))
     end
   end
+
   describe('#add_definition') do
     it('adds a definition to the word') do
       test_definition = Definitions.new({:definition => 'a person, especially a young one, endowed with exceptional qualities or abilities.'})
@@ -50,6 +55,7 @@ describe(Words) do
       expect(test_word.display_definitions()).to(eq([test_definition]))
     end
   end
+  
   describe('#clear_definitions') do
     it('clears the definitions of a word') do
       test_definition = Definitions.new({:definition => 'a person, especially a young one, endowed with exceptional qualities or abilities.'})
