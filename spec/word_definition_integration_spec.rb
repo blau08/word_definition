@@ -12,7 +12,8 @@ describe('the add word path', {:type => :feature}) do
   end
 
   it('adds a definition to word') do
-    visit('/new_word')
+    Words.new({:word => 'dog'}).save()
+    visit('/word/1')
     fill_in('definition', :with => 'animal')
     click_button('Add Definition')
     expect(page).to have_content('animal')
